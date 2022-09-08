@@ -34,7 +34,7 @@ function Login() {
         //setcookie and redirect to home page
         setCookie("uno",un,1)
         setCookie("pwd",pd,1)
-        window.location.href="http://localhost:3000/"
+        window.location.href="/"
       } else {
         //give incrt msg
       setcrt(true); 
@@ -49,7 +49,7 @@ function Login() {
             {/* <span id="spec" className="errms">Please Do not use special characters on Username</span> */}
             <input type="text" id="nn1" className="form-control" name="lname" required />
         </div>   
-        
+
     <div className="row mb-3">
             <span className="font-weight-bold">Confirm Password</span>
             {cort && <span id='war'>password incorrect</span>}              
