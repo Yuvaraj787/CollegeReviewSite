@@ -13,7 +13,7 @@ function Plate(props) {
     const [answers,setAnswers] = useState([]);
     fetch("https://backendforcollegereviewsite.herokuapp.com/getansid?qid="+qnid,{
       method:"post"
-    }).then(dathttps://backendforcollegereviewsite.herokuapp.coma=>data.json()).then(y=>{
+    }).then(data=>data.json()).then(y=>{
       setAnswers(y);
     })
     console.log(qnpart);
