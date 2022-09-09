@@ -33,7 +33,7 @@ function Plate(props) {
         </details>
         <br />
         <details className="adbox"><summary onClick={checkhim} className="btn btn-success btn-sm">Add Answer</summary>
-         <form action="http://localhost:5000/answers" method="post">
+         <form action="https://backendforcollegereviewsite.herokuapp.com/answers" method="post">
            <input type="text" value={qnid} name="qnId" style={{display:"none"}}/> 
            <textarea cols="25" rows="4" name="ansPart" placeHolder="Enter your answer here" required></textarea><br />
            <input type="text" name="byName" value={getCookie('uno')} style={{display:"none"}}/>
