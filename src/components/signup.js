@@ -15,7 +15,7 @@ function SignUp() {
     }
     function check_n_create(e) {
         e.preventDefault();
-        fetch("/check?username="+document.querySelector("#nn").value,{
+        fetch("https://backendforcollegereviewsite.herokuapp.com/check?username="+document.querySelector("#nn").value,{
             method:"POST",
         }).then(data=>data.json()).then(x=>{
             console.log("original:"+x.isnewname);
