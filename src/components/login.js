@@ -28,7 +28,7 @@ function Login() {
 
       var un = document.querySelector("#nn1").value;
       var pd = document.querySelector("#cp1").value;
-      fetch("/loginverify/"+un+"/"+pd).then(x=>x.json()).then(y=>{
+      fetch("https://backendforcollegereviewsite.herokuapp.com/loginverify/"+un+"/"+pd).then(x=>x.json()).then(y=>{
         console.log(y);
       if (y.correct) {
         //setcookie and redirect to home page
