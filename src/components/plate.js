@@ -11,9 +11,9 @@ function Plate(props) {
     const {qnid,byname,qnhead,qnpart} = props.data;
     const profileRoute = "/profile/"+byname;
     const [answers,setAnswers] = useState([]);
-    fetch("/getansid?qid="+qnid,{
+    fetch("https://backendforcollegereviewsite.herokuapp.com/getansid?qid="+qnid,{
       method:"post"
-    }).then(data=>data.json()).then(y=>{
+    }).then(dathttps://backendforcollegereviewsite.herokuapp.coma=>data.json()).then(y=>{
       setAnswers(y);
     })
     console.log(qnpart);
