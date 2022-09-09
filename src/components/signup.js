@@ -34,7 +34,7 @@ function SignUp() {
     <div class="signup">
     <h2>Sign Up for a New Account!<br /></h2>
    <h5> signup/login to continue post questions and answer other questions</h5>
-    <form id="signupForm" action='http://localhost:5000/createUser' method='post'>
+    <form id="signupForm" action='https://backendforcollegereviewsite.herokuapp.com/createUser' method='post'>
         <div className="row mb-3 mt-3">
             <span className="font-weight-bold">Username</span>
             {alreadyTaken && <span className="war">Username already exist</span>}              
