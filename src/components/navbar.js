@@ -19,7 +19,7 @@ function NavBar(props) {
         </li>
         {loggedIn ?
         <li className="nav-item">
-          <a className="nav-link" href="/profile/{getCookie('uno')}"><PersonIcon />{username}</a>
+          <a className="nav-link" href="/profile/{username}"><PersonIcon />{username}</a>
         </li>
          :
         <li className="nav-item">
