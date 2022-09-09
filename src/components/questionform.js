@@ -3,7 +3,7 @@ import {getCookie} from './login';
 function Form() {
    return(
     <div className="qnroot"><div className="qnbox border border-success rounded">
-    <form method="post" action="http://localhost:5000/questions">
+    <form method="post" action="https://backendforcollegereviewsite.herokuapp.com/questions">
     <input type="text" style={{display:"none"}} name="byName" value={getCookie('uno')} />
      <div className="row mb-3 mt-3">
             <span className="font-weight-bold">Question Heading</span>
