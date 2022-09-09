@@ -5,6 +5,7 @@ import {getCookie} from './login';
 function NavBar(props) {
      const loggedIn = props.loggedIn;
      const username = getCookie("uno");
+     const hroute = "/profile/"+username;
      return (
 <nav className="navbar navbar-expand-lg navbar-light bg-warning">
   <div className="container-fluid">
@@ -19,7 +20,7 @@ function NavBar(props) {
         </li>
         {loggedIn ?
         <li className="nav-item">
-          <a className="nav-link" href="/profile/{username}"><PersonIcon />{username}</a>
+          <a className="nav-link" href={hroute}><PersonIcon />{username}</a>
         </li>
          :
         <li className="nav-item">
