@@ -14,7 +14,7 @@ function App() {
   if (username != "") {
      console.log(username);
      console.log(pwd)
-     fetch("/loginverify/"+username+"/"+pwd).then(x=>x.json()).then(y=>{
+     fetch("https://backendforcollegereviewsite.herokuapp.com/loginverify/"+username+"/"+pwd).then(x=>x.json()).then(y=>{
         console.log(y);
       if (y.correct) {
         //setcookie and redirect to home page
