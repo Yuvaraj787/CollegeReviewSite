@@ -3,7 +3,7 @@ import Plate from './plate';
 function Profile() {
   const uname = window.location.pathname.split("/")[2];
   const [prof,setProf] = useState({})
-  fetch("/profile/"+uname,{
+  fetch("https://backendforcollegereviewsite.herokuapp.com/profile/"+uname,{
     method:"GET"
   }).then(x=>x.json()).then(y=>{
     setProf(y);
