@@ -16,7 +16,6 @@ function Questions() {
   // getAll();
   return (
     <div>
-    <h1>Hi</h1>
       {questions.map((qn,ind)=>{
         return (
           <Plate key={ind} data={qn} />
