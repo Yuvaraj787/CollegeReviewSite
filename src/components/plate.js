@@ -27,7 +27,7 @@ function Plate(props) {
           <summary>View Answers({answers.length})</summary>
           {answers.map(ans=>{
             return <div>
-        <p className="uname"><PersonIcon className="img" /><a href="/profile/{ans.byname}" className="username">{ans.byname}</a></p>
+        <p className="uname"><PersonIcon className="img" /><a href={"/profile/"+ans.byname} className="username">{ans.byname}</a></p>
             <p>{ans.anspart}</p>
             </div> }) }
         </details>
