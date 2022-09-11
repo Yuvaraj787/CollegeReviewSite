@@ -9,8 +9,9 @@ function Profile() {
     setProf(y);
     console.log(y);
   })
-  return (
+  return (   
     <div style={{textAlign:"center"}}>
+    {prof.username?
         <div className='border border-success pprof rounded' 
         style={
           {
@@ -28,7 +29,7 @@ function Profile() {
            <p>Status: <strong>{prof.currentstatus}</strong></p>
            <p>Institute: <strong>{prof.institute}</strong></p>
            <p>Class:<strong>{prof.class}</strong></p>
-        </div>
+        </div>:<div className="img-box"><img src="https://media1.giphy.com/media/y1ZBcOGOOtlpC/200w.webp?cid=ecf05e47wds1c6n00n4dtpstygimby6trjwtk4od9ydr01ln&rid=200w.webp&ct=g" alt="loading" /></div>}
     </div>
   )
 }
