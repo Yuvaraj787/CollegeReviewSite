@@ -9,6 +9,9 @@
     width: 55%;
     background-color: rgb(234, 206, 169);
 }
+.img-box {
+    text-align: center;
+}
 @media all and (min-width:100px) and (max-width: 600px) {
   .gapp {
     display: list-item; 
